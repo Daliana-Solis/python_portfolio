@@ -22,9 +22,9 @@ with col2:
 
 
 conte2 = 'Below are some of the Python applications I have worked on.'
-st.write(conte2)
+st.subheader(conte2)
 
-col3, empty_coln, col4 = st.columns([1.5, 0.5, 1.5])
+col3, col4 = st.columns(2)
 
 df = pandas.read_csv("data.csv", sep=';')
 
