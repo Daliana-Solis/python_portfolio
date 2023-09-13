@@ -6,7 +6,7 @@ st.set_page_config(layout='wide')
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/me_photo.jpg")
+    st.image("images/me_photo.jpg", width=700)
 
 
 with col2:
@@ -32,7 +32,7 @@ with col3:
     for index, row in df[:10].iterrows():
         st.header(row['title'])
         st.write(row['description'])
-        st.image("images/" +row['image'])
+        st.image("images/" +row['image'], width=500)
 
         #later add your own URL
         #f"[Source Code]({row['url']})"
@@ -42,6 +42,6 @@ with col4:
     for index, row in df[10:].iterrows():
         st.header(row['title'])
         st.write(row['description'])
-        st.image("images/" +row['image'])
+        st.image("images/" +row['image'], width=500)
         st.write("[Source Code](https://pythonhow.com)")
 
